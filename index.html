@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Series | API REST</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscador de Series de TV</h1>
+        <p>Encuentra información sobre tus series favoritas consumiendo una API REST.</p>
+        
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Ej. Breaking Bad, The Office, Suits...">
+            <button id="searchBtn">Buscar</button>
+        </div>
+
+        <!-- Estados de la aplicación -->
+        <div id="loading" class="hidden">Buscando en la base de datos...</div>
+        <div id="errorMsg" class="hidden error"></div>
+        <div id="emptyState" class="hidden">No se encontró ninguna serie con ese nombre.</div>
+
+        <!-- Contenedor dinámico del DOM -->
+        <div id="results" class="grid-container"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
